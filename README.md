@@ -35,7 +35,10 @@ The framework accurately post-dicts the fundamental constants of the universe wi
 | **Hubble Constant**| $H_0$ | **71.1** | 70-73 | - | Moduli Evolution |
 | **SUSY Scale** | $m_{3/2}$ | **55 TeV** | > 2 TeV | - | Split Moduli ($K=5$) |
 
+
 *Note: The SUSY scale of 55 TeV comes from m_{3/2} = M_P × exp(-2π×5), where K=5 represents the dynamical moduli after one is used to fix the Planck scale.*
+
+
 ---
 
 ## 3. Repository Roadmap
