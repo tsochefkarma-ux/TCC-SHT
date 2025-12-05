@@ -26,7 +26,7 @@ This supports the "Moduli Evolution" solution to the Hubble Tension.
 
 
 ---
-
+```
 cat << 'EOF' > verify_schoen_geometry.sage
 #!/usr/bin/env sage
 # ==============================================================================
@@ -180,3 +180,4 @@ else:
 
 print("="*60)
 EOF
+```
