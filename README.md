@@ -9,6 +9,10 @@
 
 This is all CONJECTURE any claims made within this are not claiming truths applicable to our universe, only to a universe that is governed by the Schoen Manifold. While it is still technically possible for this to be ours, the liklihood is... It isn't. This is a passion project first and foremost. Done by someone with absolutely 0 previous professional experience in either physics or mathematics. 
 
+This is done entirely by myself a philosophy student and a repository of LLMs. I have reached out to a couple of physicists to make sure our "master equation" is fair and valid from the Sage Math. But other than that, not a single thing has been validated by the scientist community. As such:
+
+---
+It is open-source. We invite you to break it.
 ---
 
 ## 1. Abstract
