@@ -118,3 +118,8 @@ Creative Commons Attribution 4.0 International (CC-BY-4.0)
 You may share and adapt this work with attribution. See [LICENSE](LICENSE) for details.
 
 """
+
+
+## 7. The Reality
+
+This is an experiment in AI-Assisted Theoretical Physics. We asked a suite of LLMs to derive the fundamental constants ($1/137$, masses, cosmology) starting only from the geometry of the Schoen Manifold.The result is a self-consistent framework with zero free parameters that matches the Energy Budget (12:5:1) and resolves the Hubble Tension. It includes Python and SageMath scripts to verify the derivations.
