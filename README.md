@@ -11,8 +11,8 @@ This is all CONJECTURE any claims made within this are not claiming truths appli
 
 This is done entirely by myself a philosophy student and a repository of LLMs. I have reached out to a couple of physicists to make sure our "master equation" is fair and valid from the Sage Math. But other than that, not a single thing has been validated by the scientist community. As such:
 
----
-It is open-source. We invite you to break it.
+**It is open-source. We invite you to break it.**
+
 ---
 
 ## 1. Abstract
