@@ -1,7 +1,4 @@
-{
-type: "file",
-fileName: "01_The_Kill_List.md",
-fullContent: """
+
 # The Kill List: Definitive Experimental Predictions
 
 **Date:** December 2025
@@ -71,3 +68,4 @@ This document lists the specific, falsifiable predictions of the Computational C
 | **Euclid** | Dark Energy EOS ($w$) | **-1.05** |
 """
 }
+
