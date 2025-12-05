@@ -33,8 +33,9 @@ The framework accurately post-dicts the fundamental constants of the universe wi
 | **Fine Structure** | $1/\alpha$ | **137** | 137.036 | < 0.1% | Vacuum Deficit ($N \times 6 - 13$) |
 | **Lepton Ratio** | $m_\mu/m_e$ | **207** | 206.77 | 0.1% | Heterotic Product Space |
 | **Hubble Constant**| $H_0$ | **71.1** | 70-73 | - | Moduli Evolution |
-| **SUSY Scale** | $m_{3/2}$ | **280 TeV** | > 2 TeV | - | Split Moduli ($K=5$) |
+| **SUSY Scale** | $m_{3/2}$ | **55 TeV** | > 2 TeV | - | Split Moduli ($K=5$) |
 
+*Note: The SUSY scale of 55 TeV comes from m_{3/2} = M_P × exp(-2π×5), where K=5 represents the dynamical moduli after one is used to fix the Planck scale.*
 ---
 
 ## 3. Repository Roadmap
@@ -85,10 +86,12 @@ This theory is not a philosophy; it is a physical model. It is falsified if:
 
 ## 5. Acknowledgments
 
-This work would not exist without the rapid computation, pattern recognition, and knowledge synthesis provided by Large Language Models.
-* **Logic & Derivation:** Claude 4.5 Opus & GPT-5
-* **Cross-Checking:** Grok & Gemini Pro
-* **Human Intuition:** [Will Ratcliffe]
+This work stands on the shoulders of:
+* **HSS (1997):** For the topology of the Schoen Manifold.
+* **Constantin et al. (2024):** For the cohomology of string vacua.
+* **Seth Lloyd (2002):** For the computational bounds of the universe.
+* **Tononi & Massimini:** For the Information Theory of Consciousness.
+
 
 ## 6.Citation
 
