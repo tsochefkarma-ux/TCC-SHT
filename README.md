@@ -2,18 +2,16 @@
 ## Heterotic M-Theory on the Schoen Manifold ($Z_3 \times Z_3$)
 
 > **Author Note:**
-> I have absolutely no formal training in physics or mathematics.
-> This theory was constructed, derived, and rigorously cross-checked through an iterative collaboration with artificial intelligence systems, specifically **Grok**, **Claude**, **ChatGPT**, and **Gemini**.
-> It is an experiment in "AI-Assisted Theoretical Physics"—using large language models to bridge the gap between intuition and rigorous formalism.
-> I am however, a masters student in Philosophy. As such all conceptual ideas, formulations and bridges between AI was done solely by me the Author.
+Author Note: I have absolutely no formal training in physics or mathematics. This theory was constructed, derived, and rigorously cross-checked through an iterative collaboration with artificial intelligence systems, specifically Grok, Claude, ChatGPT, and Gemini. It is an experiment in "AI-Assisted Theoretical Physics"—using large language models to bridge the gap between intuition and rigorous formalism. I am, however, a masters student in Philosophy. As such all conceptual ideas, formulations and bridges between AI was done solely by me the Author.
 
-This is all CONJECTURE any claims made within this are not claiming truths applicable to our universe, only to a universe that is governed by the Schoen Manifold. While it is still technically possible for this to be ours, the liklihood is... It isn't. This is a passion project first and foremost. Done by someone with absolutely 0 previous professional experience in either physics or mathematics. 
+This is all CONJECTURE any claims made within this are not claiming truths applicable to our universe, only to a universe that is governed by the Schoen Manifold. While it is still technically possible for this to be ours, the likelihood is... It isn't. This is a passion project first and foremost. Done by someone with absolutely 0 previous professional experience in either physics or mathematics.
 
-This is done entirely by myself a philosophy student and a repository of LLMs. I have reached out to a couple of physicists to make sure our "master equation" is fair and valid from the Sage Math (Verficiation Pending). But other than that, not a single thing has been validated by the scientist community. As such:
+This is done entirely by myself, a philosophy student and a repository of LLMs. I have reached out to a couple of physicists to make sure our "master equation" is fair and valid from the Sage Math (Verification Pending). But other than that, not a single thing has been validated by the scientist community. As such:
 
-**It is open to the public. We invite you to break it.**
+It is open to the public. We invite you to break it.
 
-Additional Note: Every single calculation and code was done via AI, again, I am not a trained scientist, mathmetician nor coder. I MASSIVELY relied on these things for the maths, as such EVERYTHING and I do mean EVERYTHING should be taken with a grain of salt. Look into the maths yourselves, DO NOT and I mean DO NOT take anything for granted in this framework. 
+Additional Note: Every single calculation and code was done via AI, again, I am not a trained scientist, mathematician nor coder. I MASSIVELY relied on these things for the maths, as such EVERYTHING and I do mean EVERYTHING should be taken with a grain of salt. Look into the maths yourselves, DO NOT and I mean DO NOT take anything for granted in this framework.
+
 
 ---
 
