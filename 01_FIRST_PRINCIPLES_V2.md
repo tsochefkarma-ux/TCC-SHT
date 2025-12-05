@@ -82,7 +82,7 @@ The mass hierarchy reflects the degrees of freedom in the Heterotic Product Spac
 The hierarchy between the Planck and Electroweak scales is set by the volume of the stabilized moduli space.
 * **Split Moduli:** One modulus fixes the Planck scale. The remaining $K=5$ moduli ($6-1$) break SUSY.
 * **Derivation:**
-    $$m_{3/2} \approx M_P \cdot e^{-2\pi(5)} \approx 2.4 \times 10^{18} \text{ GeV} \times 10^{-14} \approx \mathbf{55 \text{ TeV}}$$
+    $$m_{3/2} = M_{P,fund} \cdot e^{-2\pi(K)} = 1.22 \times 10^{19} \cdot e^{-10\pi} \approx \mathbf{280 \text{ TeV}}$$
 
 ### 4.2 The Universal Axion
 The 3 Kähler moduli are forced to be equal by $Z_3$ symmetry ($T_1=T_2=T_3$).
