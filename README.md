@@ -2,7 +2,7 @@
 ## Heterotic M-Theory on the Schoen Manifold ($Z_3 \times Z_3$)
 
 > **Author Note:**
-Author Note: I have absolutely no formal training in physics or mathematics. This theory was constructed, derived, and rigorously cross-checked through an iterative collaboration with artificial intelligence systems, specifically Grok, Claude, ChatGPT, and Gemini. It is an experiment in "AI-Assisted Theoretical Physics"—using large language models to bridge the gap between intuition and rigorous formalism. I am, however, a masters student in Philosophy. As such all conceptual ideas, formulations and bridges between AI was done solely by me the Author.
+Author Note: I have absolutely no formal training in physics or mathematics. This theory was constructed, derived, and rigorously cross-checked through an iterative collaboration with artificial intelligence systems, specifically Grok, Claude, ChatGPT, and Gemini. It is an experiment in "AI-Assisted Theoretical Physics" using large language models to bridge the gap between intuition and rigorous formalism. I am, however, a masters student in Philosophy. As such all conceptual ideas, formulations and bridges between AI was done solely by me the Author.
 
 This is all CONJECTURE any claims made within this are not claiming truths applicable to our universe, only to a universe that is governed by the Schoen Manifold. While it is still technically possible for this to be ours, the likelihood is... It isn't. This is a passion project first and foremost. Done by someone with absolutely 0 previous professional experience in either physics or mathematics.
 
