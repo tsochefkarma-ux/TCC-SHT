@@ -55,6 +55,7 @@ The following unification parameters are derived in the files within this direct
 
 ---
 ### Everything below this is purely speculative. (Even more so than everything prior.)
+---
 
 ### [`04_Consciousness_and_the_Interior.md`](./04_Consciousness_and_the_Interior.md)
 **The Architecture of the Observer.**
@@ -80,4 +81,5 @@ The framework reveals that these disparate problems are actually linked by the n
 5.  **Qualia** are the internal shadows of the 6 geometric degrees of freedom.
 
 We do not need separate theories for Gravity, Matter, Mind, and Quanta. We only need the **Geometry of the Projection**.
+
 
