@@ -31,7 +31,7 @@ The framework accurately post-dicts the fundamental constants of the universe wi
 | **Fine Structure** | $1/\alpha$ | **137** | 137.036 | < 0.1% | Vacuum Deficit ($N \times 6 - 13$) |
 | **Lepton Ratio** | $m_\mu/m_e$ | **207** | 206.77 | 0.1% | Heterotic Product Space |
 | **Hubble Constant**| $H_0$ | **71.1** | 70-73 | - | Moduli Evolution |
-| **SUSY Scale** | $m_{3/2}$ | **55 TeV** | > 1 TeV | - | Split Moduli ($K=5$) |
+| **SUSY Scale** | $m_{3/2}$ | **280 TeV** | > 2 TeV | - | Split Moduli ($K=5$) |
 
 ---
 
