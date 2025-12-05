@@ -66,6 +66,6 @@ This document lists the specific, falsifiable predictions of the Computational C
 | **FCC-hh** | Gluino Mass | **~6 TeV** |
 | **LiteBIRD** | Tensor Ratio ($r$) | **$\approx 0$** |
 | **Euclid** | Dark Energy EOS ($w$) | **-1.05** |
-"""
-}
+
+
 
