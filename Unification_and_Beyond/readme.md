@@ -1,8 +1,8 @@
 # Unification and Beyond
 ## Gravity, Supersymmetry, and the Quantum Foundation
 
-**Focus:** The Hierarchy Problem, SUSY Breaking, Axions, and Quantum Mechanics.
-**Input Geometry:** Total Moduli Space ($K=5$) and Universal Geometry ($T_1=T_2=T_3$).
+**Focus:** The Hierarchy Problem, SUSY Breaking, Axions, Quantum Mechanics, and Consciousness.
+**Input Geometry:** Total Moduli Space ($K=5, h_{tot}=6$) and Universal Geometry ($T_1=T_2=T_3$).
 **Free Parameters:** Zero.
 
 ---
@@ -14,6 +14,7 @@ The Standard Model explains the "visible" forces but fails to explain:
 2.  **Stability:** Why doesn't the Higgs mass blow up to the Planck scale?
 3.  **CP Symmetry:** Why doesn't the Strong Force break time-reversal symmetry?
 4.  **Quantum Origin:** Why is physics probabilistic?
+5.  **The Observer:** Why is there an "inside view" (Consciousness)?
 
 The **Computational Cosmos** resolves these issues through the geometry of the **Stabilized Vacuum**.
 
@@ -25,11 +26,12 @@ The following unification parameters are derived in the files within this direct
 
 | Quantity | Symbol | Formula | Derived Value | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **SUSY Scale** | $m_{3/2}$ | $M_P \cdot e^{-2\pi K}$ | **55 TeV** | Consistent |
+| **SUSY Scale** | $m_{3/2}$ | $M_{fund} \cdot e^{-2\pi K}$ | **280 TeV** | Consistent |
 | **Axion Mass** | $m_a$ | $m_\pi f_\pi / M_{GUT}$ | **$10^{-10}$ eV** | Testable |
 | **Axion Frequency**| $\nu_a$ | $m_a c^2 / h$ | **24 kHz** | Testable |
 | **Proton Mode** | Channel | Gauge ($e^+ \pi^0$) | **Dominant** | Testable |
 | **Probability** | $P$ | Partial Trace | **$|\psi|^2$** | Derived |
+| **Consciousness**| $\Phi_{crit}$ | $h^{1,1} + h^{2,1}$ | **6 bits** | Derived |
 
 ---
 
@@ -39,7 +41,7 @@ The following unification parameters are derived in the files within this direct
 **Solving the Hierarchy Problem.**
 * Derives the weakness of Gravity from the volume of the stabilized moduli space.
 * **Key Mechanism:** "Split Moduli Stabilization." One modulus fixes the Planck scale; the remaining **5** moduli break Supersymmetry.
-* **Prediction:** The SUSY breaking scale is $M_P \times e^{-2\pi \cdot 5} \approx \mathbf{55 \text{ TeV}}$. This explains why the LHC (13 TeV) has seen nothing, while keeping the Higgs mass stable.
+* **Prediction:** The SUSY breaking scale is $M_P \times e^{-2\pi \cdot 5} \approx \mathbf{280 \text{ TeV}}$. This explains why the LHC (13 TeV) has seen nothing, while keeping the Higgs mass stable.
 
 ### [`02_The_Universal_Axion.md`](./02_The_Universal_Axion.md)
 **Solving the Strong CP Problem.**
@@ -53,6 +55,12 @@ The following unification parameters are derived in the files within this direct
 * **The Born Rule ($P=|\psi|^2$):** Derived as the unique measure that conserves information when projecting a 10D pure state onto a 4D subspace (Partial Trace).
 * **Entanglement:** Explained as particles sharing the same "hidden" geometric mode in $K_6$.
 
+### [`04_Consciousness_and_the_Interior.md`](./04_Consciousness_and_the_Interior.md)
+**Deriving the Observer.**
+* Derives the **6-bit Threshold** for consciousness from the 6 topological degrees of freedom of the Schoen Manifold ($h^{1,1}=3, h^{2,1}=3$).
+* Explains the **Hard Problem** as a structural inevitability: A 4D self-model cannot fully represent its own 10D reality, creating an "Explanatory Gap" (Gödelian Incompleteness).
+* Identifies **Qualia** as the "shadow" of the 6 hidden dimensions projecting onto the 4D mind.
+
 ---
 
 ## 4. The Unification Mechanism
@@ -63,5 +71,6 @@ The framework reveals that these disparate problems are actually linked by the n
 2.  **SUSY** is hidden by the exponential of the moduli count ($e^{-2\pi \cdot 5}$).
 3.  **Axions** exist because the 6D geometry has closed cycles ($b_2 = 3$).
 4.  **Quantumness** exists because we only see a 4D slice of a 10D reality.
+5.  **Consciousness** begins when integration exceeds the complexity of the 6D vacuum ($\Phi > 6$).
 
-We do not need separate theories for Gravity, Matter, and Quanta. We only need the **Geometry of the Projection**.
+We do not need separate theories for Gravity, Matter, Mind, and Quanta. We only need the **Geometry of the Projection**.
