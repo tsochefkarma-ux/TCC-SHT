@@ -104,7 +104,7 @@ This work stands on the shoulders of:
 
 ```bibtex
 @misc{computational_cosmos_2025,
-  author = {Ratcliffe},
+  author = {Will Ratcliffe},
   title = {The Computational Cosmos: A Framework for Fundamental Physics},
   year = {2025},
   month = {December},
