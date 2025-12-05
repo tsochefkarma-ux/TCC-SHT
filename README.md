@@ -13,6 +13,8 @@ This is done entirely by myself a philosophy student and a repository of LLMs. I
 
 **It is open to the public. We invite you to break it.**
 
+Additional Note: Every single calculation and code was done via AI, again, I am not a trained scientist, mathmetician nor coder. I MASSIVELY relied on these things for the maths, as such EVERYTHING and I do mean EVERYTHING should be taken with a grain of salt. Look into the maths yourselves, DO NOT and I mean DO NOT take anything for granted in this framework. 
+
 ---
 
 ## 1. Abstract
