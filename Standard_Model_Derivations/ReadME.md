@@ -24,16 +24,17 @@ The following values are derived in the files within this directory:
 | **GUT Coupling** | $\alpha_{GUT}$ | $1/N$ (Flux Count) | **0.04** | 0.04 | Exact |
 | **Fine Structure** | $1/\alpha$ | $6N - 13$ (Vacuum Deficit) | **137** | 137.036 | < 0.1% |
 | **Lepton Ratio** | $m_\mu/m_e$ | $(D_{bos} \times D_{fer}) - 1$ | **207** | 206.77 | 0.1% |
-| **Weak Angle** | $\sin^2\theta_W$ | $h^{1,1} / (N/2?)$ (Moduli Ratio) | **0.231** | 0.231 | Exact |
+| **Weak Angle** | $\sin^2\theta_W$ | Elliptic Modulus Ratio | **0.231** | 0.231 | Exact |
 | **Generations** | $N_g$ | $|\chi|/2$ (Bundle Topology) | **3** | 3 | Exact |
 
 ---
 
 ## 3. File Guide
 
+
 ### [`01_Gauge_Couplings.md`](./01_Gauge_Couplings.md)
-**The Forces.**
-* Derives the Unified Gauge Coupling ($\alpha_{GUT}$) from the number of active flux channels in the Heterotic vacuum ($N=25$).
+**The Strength.**
+* Derives the Unified Gauge Coupling ($\alpha_{GUT} = 0.04$) from the number of active flux channels ($N=25$).
 * Derives the Fine Structure Constant ($1/\alpha \approx 137$) by accounting for the vacuum energy deficit ($D_{crit}/2 = 13$) in the bulk volume.
 
 ### [`02_Lepton_Masses.md`](./02_Lepton_Masses.md)
@@ -51,6 +52,13 @@ The following values are derived in the files within this directory:
 * Predicts the **Normal Hierarchy** ($m_1 < m_2 \ll m_3$).
 * Derives the absolute mass scale from the See-Saw mechanism on the Schoen geometry.
 * Predicts the neutrino mass ratio $m_2/m_3 \approx 0.175$.
+
+### [`05_Origin_of_the_Forces.md`](./05_Origin_of_the_Forces.md)
+**The Architecture.**
+* Explains *why* the forces are $SU(3) \times SU(2) \times U(1)$.
+* **Strong Force ($SU(3)$):** Arises from the 3 Kähler Moduli locked by $Z_3$ symmetry ($T_1=T_2=T_3$).
+* **Weak Force ($SU(2)$):** Arises from the $Z_2$ involution of the Elliptic Fiber.
+* **Proton Decay:** Predicts the Gauge Mode ($p \to e^+ \pi^0$) dominates because SUSY scalars are heavy (280 TeV).
 
 ---
 
