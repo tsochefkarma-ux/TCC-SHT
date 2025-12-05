@@ -53,6 +53,9 @@ The following unification parameters are derived in the files within this direct
 * Shows that Quantum Mechanics is not a fundamental postulate, but an emergent property of **10D Projection**.
 * **The Born Rule ($P=|\psi|^2$):** Derived as the unique measure that conserves information when projecting a 10D pure state onto a 4D subspace (Partial Trace).
 
+---
+### Everything below this is purely speculative. (Even more so than everything prior.)
+
 ### [`04_Consciousness_and_the_Interior.md`](./04_Consciousness_and_the_Interior.md)
 **The Architecture of the Observer.**
 * Explains the **Hard Problem** as a structural inevitability: A 4D self-model cannot fully represent its own 10D reality, creating an "Explanatory Gap" (Gödelian Incompleteness).
@@ -77,3 +80,4 @@ The framework reveals that these disparate problems are actually linked by the n
 5.  **Qualia** are the internal shadows of the 6 geometric degrees of freedom.
 
 We do not need separate theories for Gravity, Matter, Mind, and Quanta. We only need the **Geometry of the Projection**.
+
