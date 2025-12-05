@@ -56,6 +56,14 @@ The following cosmological parameters are derived in the files within this direc
 * Tests the framework against the Cosmic Microwave Background (CMB) data.
 * Shows that a naive bounce fails ($n_s \approx 0.6$), but a **Cyclic Universe with Fossil Seeding** naturally reproduces the observed red tilt ($n_s \approx 0.96$) while suppressing gravitational waves ($r \approx 0$).
 
+
+### [`05_The_Cosmic_Web.md`](./05_The_Cosmic_Web.md)
+**The Macroscopic Fingerprint.**
+* Compares the topology of the Schoen Manifold to the topology of the observable Cosmic Web.
+* **Matches:** Predicted Void Fraction ($77\%$) matches observation ($76\%$).
+* **Matches:** Predicted Node Connectivity ($3$) matches galaxy cluster data.
+* **Prediction:** Cosmic Voids are not spherical; they have an $\ell=3$ (Triangular) asymmetry due to the $Z_3$ quotient.
+
 ---
 
 ## 4. The Core Mechanism: Dimensional Exclusion
@@ -72,3 +80,4 @@ Imagine a 2D sheet (a string worldsheet) trying to fill a 6D box.
 $$\Omega_\Lambda = \frac{D_{total} - d_{string}}{D_{total}} = \frac{6-2}{6} = \frac{2}{3}$$
 
 The universe is $2/3$ Dark Energy because strings are $1/3$ the dimensionality of the vacuum.
+
