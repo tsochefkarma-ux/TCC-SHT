@@ -15,10 +15,10 @@ We compare the topological predictions of the Schoen Manifold against high-preci
 
 | Feature | Schoen Prediction | Observed | Status |
 | :--- | :--- | :--- | :--- |
-| **Void Fraction** | **77%** | 76% | ✅ Match |
-| **Filaments** | **22%** | 24% | ✅ Match |
-| **Connectivity** | **Peak at 3** | Peak at 3 | ✅ Match ($Z_3$) |
-| **Scales** | **3 Distinct** | 3 Distinct | ✅ Match ($h^{1,1}=3$) |
+| **Void Fraction** | **77%** | 76% |  Match |
+| **Filaments** | **22%** | 24% |  Match |
+| **Connectivity** | **Peak at 3** | Peak at 3 |  Match ($Z_3$) |
+| **Scales** | **3 Distinct** | 3 Distinct | Match ($h^{1,1}=3$) |
 
 ---
 
