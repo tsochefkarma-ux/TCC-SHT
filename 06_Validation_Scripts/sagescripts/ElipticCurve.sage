@@ -1,0 +1,93 @@
+cat > schoen_analysis.sage << 'EOF'
+print("="*60)
+print("SCHOEN FIBER PRODUCT ANALYSIS")
+print("="*60)
+
+# Elliptic curve at j=0
+E = EllipticCurve([0, 1])
+L = E.period_lattice()
+tau = CC(L.basis()[1]/L.basis()[0])
+g_elliptic = float(1/(tau.imag())^2)
+
+print(f"\nElliptic curve g_wp = {g_elliptic:.4f}")
+
+# Our topological data
+kappa = [9, 3, 3]
+kappa_123 = 27
+print(f"Intersection numbers κ = {kappa}")
+print(f"κ₁₂₃ = {kappa_123}")
+
+# Key relationship: For fiber product, W-P scales with 1/κ
+inv_kappa = [1.0/k for k in kappa]
+ratios = [x/inv_kappa[0] for x in inv_kappa]
+print(f"\nEigenvalue ratios: 1 : {ratios[1]:.2f} : {ratios[2]:.2f}")
+
+# Our prediction
+A = float((-25 + sqrt(653))/2)
+lambda_1 = float(sqrt(A))
+
+print(f"\n" + "="*60)
+print("TESTING RELATIONSHIPS")
+print("="*60)
+
+# Test 1: Does g_elliptic relate to κ?
+print(f"\ng_elliptic = {g_elliptic:.4f}")
+print(f"g_elliptic / κ₁ = {g_elliptic/9:.4f}")
+print(f"g_elliptic / κ₂ = {g_elliptic/3:.4f}")
+
+# Test 2: Fiber product scaling
+g_product = g_elliptic * g_elliptic
+print(f"\ng₁ × g₂ = {g_product:.4f}")
+print(f"1/(g₁ × g₂) = {1/g_product:.6f}")
+print(f"sqrt(1/(g₁×g₂)) = {float(sqrt(1/g_product)):.6f}")
+
+# Test 3: With κ normalization
+lambda_test = float(sqrt(1/(g_product * kappa[0])))
+print(f"\nsqrt(1/(g²×κ₁)) = {lambda_test:.6f}")
+print(f"Our λ₁ = {lambda_1:.6f}")
+print(f"Ratio: {lambda_1/lambda_test:.4f}")
+
+# Test 4: Self-referential equation
+print(f"\n" + "="*60)
+print("CHECKING SELF-REFERENTIAL EQUATION")
+print("="*60)
+print(f"A = {A:.6f}")
+print(f"A² = {A**2:.6f}")
+print(f"25A = {25*A:.6f}")
+print(f"A² + 25A = {A**2 + 25*A:.6f} (should be 7)")
+
+# Test 5: What value of g gives our A?
+g_eff = 1/A
+print(f"\n1/A = {g_eff:.4f}")
+print(f"g_elliptic/g_eff = {g_elliptic/g_eff:.4f}")
+
+# Test 6: κ₁₂₃ normalization
+print(f"\n" + "="*60)
+print("κ₁₂₃ NORMALIZATION")  
+print("="*60)
+normalized_g = g_elliptic / kappa_123
+print(f"g_elliptic / κ₁₂₃ = {normalized_g:.6f}")
+print(f"(g_elliptic / κ₁₂₃)² = {normalized_g**2:.6f}")
+print(f"Our A = {A:.6f}")
+
+# Test 7: Various combinations
+print(f"\n" + "="*60)
+print("SEARCHING FOR RELATIONSHIP")  
+print("="*60)
+print(f"sqrt(g/κ₁₂₃) = {float(sqrt(g_elliptic/kappa_123)):.6f}")
+print(f"g/(κ₁₂₃×κ₁) = {g_elliptic/(kappa_123*9):.6f}")
+print(f"1/sqrt(g×κ₁) = {float(1/sqrt(g_elliptic*9)):.6f}")
+print(f"sqrt(κ₁/(g×κ₁₂₃)) = {float(sqrt(9/(g_elliptic*27))):.6f}")
+print(f"\nOur λ₁ = {lambda_1:.6f}")
+print(f"Our A = {A:.6f}")
+
+# Test 8: The magic - does 12 relate to 25?
+print(f"\n" + "="*60)
+print("THE 25 CONNECTION")  
+print("="*60)
+print(f"g_elliptic + 13 = {g_elliptic + 13}")
+print(f"κ₁₂₃ - 2 = {kappa_123 - 2} = 25 ✓")
+print(f"g_elliptic × 2 + 1 = {g_elliptic*2 + 1}")
+print(f"g_elliptic + κ₁ + 4 = {g_elliptic + 9 + 4}")
+EOF
+sage schoen_analysis.sage
