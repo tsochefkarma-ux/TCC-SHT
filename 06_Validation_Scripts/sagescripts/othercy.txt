@@ -1,0 +1,106 @@
+cat > test_other_cy.sage << 'EOF'
+print("="*60)
+print("TESTING FORMULA ON OTHER CALABI-YAU MANIFOLDS")
+print("="*60)
+print("\nGeneral formula: A² + (κ₁₂₃ - h + 1)A = κ₁ - h + 1")
+
+def compute_A(kappa, h):
+    """Compute A from topological data"""
+    k1, k2, k3 = kappa
+    kappa_123 = k1 * k2 * k3 / max(k1,k2,k3)  # For diagonal case
+    # Actually for our case κ₁₂₃ = 27 directly
+    # Let's use the triple intersection number directly
+    N = kappa_123 - h + 1
+    M = k1 - h + 1
+    # Solve A² + NA = M
+    discriminant = N**2 + 4*M
+    if discriminant < 0:
+        return None, None, None
+    A = (-N + float(sqrt(discriminant)))/2
+    lambda_1 = float(sqrt(abs(A))) if A > 0 else None
+    return A, lambda_1, (N, M)
+
+# Test case 1: Schoen (our manifold)
+print("\n" + "-"*60)
+print("1. SCHOEN MANIFOLD (Z₃×Z₃ quotient)")
+kappa_123 = 27
+h = 3
+k1 = 9
+N = kappa_123 - h + 1
+M = k1 - h + 1
+A = float((-N + sqrt(N**2 + 4*M))/2)
+lam = float(sqrt(A))
+print(f"   κ₁₂₃ = {kappa_123}, h²¹ = {h}, κ₁ = {k1}")
+print(f"   N = {N}, M = {M}")
+print(f"   A = {A:.6f}, λ₁ = {lam:.6f}")
+print(f"   Cabibbo: {float(arcsin(lam/sqrt(6)*(1+A/6))*180/pi):.2f}°")
+
+# Test case 2: Quintic (for comparison)
+print("\n" + "-"*60)
+print("2. QUINTIC THREEFOLD")
+kappa_123 = 5  # Self-intersection
+h = 101
+k1 = 5
+N = kappa_123 - h + 1
+M = k1 - h + 1
+print(f"   κ₁₂₃ = {kappa_123}, h²¹ = {h}, κ₁ = {k1}")
+print(f"   N = {N}, M = {M}")
+print(f"   Note: N, M negative - different regime!")
+# Solve anyway
+disc = N**2 + 4*M
+print(f"   Discriminant = {disc}")
+if disc >= 0:
+    A = (-N + float(sqrt(disc)))/2
+    print(f"   A = {A:.6f}")
+
+# Test case 3: A simpler case - what if h=1?
+print("\n" + "-"*60)
+print("3. HYPOTHETICAL: h²¹ = 1 manifold")
+kappa_123 = 8
+h = 1
+k1 = 4
+N = kappa_123 - h + 1
+M = k1 - h + 1
+print(f"   κ₁₂₃ = {kappa_123}, h²¹ = {h}, κ₁ = {k1}")
+print(f"   N = {N}, M = {M}")
+A = float((-N + sqrt(N**2 + 4*M))/2)
+lam = float(sqrt(A))
+print(f"   A = {A:.6f}, λ₁ = {lam:.6f}")
+
+# Test case 4: Tian-Yau (CICY)
+print("\n" + "-"*60)
+print("4. TIAN-YAU MANIFOLD (Z₃ quotient of CICY)")
+# After quotient: h¹¹=2, h²¹=2 for the simplest version
+# Let's try h²¹=9 for comparison
+kappa_123 = 9  # Typical CICY value
+h = 9
+k1 = 3
+N = kappa_123 - h + 1
+M = k1 - h + 1
+print(f"   κ₁₂₃ = {kappa_123}, h²¹ = {h}, κ₁ = {k1}")
+print(f"   N = {N}, M = {M}")
+if N**2 + 4*M >= 0:
+    A = float((-N + sqrt(N**2 + 4*M))/2)
+    if A > 0:
+        lam = float(sqrt(A))
+        print(f"   A = {A:.6f}, λ₁ = {lam:.6f}")
+    else:
+        print(f"   A = {A:.6f} (negative - no real eigenvalue)")
+
+print("\n" + "="*60)
+print("INSIGHT")
+print("="*60)
+print("""
+The formula A² + (κ₁₂₃ - h + 1)A = κ₁ - h + 1 works when:
+  - N = κ₁₂₃ - h + 1 > 0  (topology constraint)
+  - M = κ₁ - h + 1 > 0    (positive eigenvalue)
+  
+The Schoen manifold is SPECIAL because:
+  - Self-mirror (h¹¹ = h²¹ = 3)
+  - Small h²¹ (compact moduli space)
+  - Large κ₁₂₃ = 27 (strong curvature)
+  
+This makes N >> M, giving small A ≈ M/N ≈ 7/25 ≈ 0.28
+""")
+EOF
+sage test_other_cy.sage

@@ -1,0 +1,94 @@
+cat > schoen_lefschetz.sage << 'EOF'
+print("="*70)
+print("SCHOEN MANIFOLD W-P EIGENVALUE COMPUTATION")
+print("Using lefschetz-family package")
+print("="*70)
+
+from lefschetz_family import *
+import numpy as np
+
+# Our prediction
+A_pred = float((-25 + sqrt(653))/2)
+lambda_pred = float(sqrt(A_pred))
+print(f"\nPREDICTION: λ₁ = {lambda_pred:.6f} (from A² + 25A = 7)")
+
+print("\n" + "-"*70)
+print("Setting up Schoen manifold as fiber product...")
+print("-"*70)
+
+# The Schoen manifold is a fiber product of two rational elliptic surfaces
+# Each surface is defined by a Weierstrass equation over P^1
+
+# For j-invariant = 0 (Z₃ symmetric point):
+# y² = x³ + g(t) where g(t) gives the fiber structure
+
+# Try to create the elliptic surfaces
+try:
+    # Check what's available in the package
+    print(f"\nAvailable classes: {[x for x in dir() if not x.startswith('_')]}")
+    
+    # The package should have EllipticSurface or similar
+    # Let's explore the API
+    import lefschetz_family as lf
+    print(f"\nModule contents: {[x for x in dir(lf) if not x.startswith('_')]}")
+    
+except Exception as e:
+    print(f"Setup error: {e}")
+    import traceback
+    traceback.print_exc()
+
+print("\n" + "-"*70)
+print("Attempting period computation...")
+print("-"*70)
+
+try:
+    # Rational elliptic surface with j=0 fibers
+    # Standard form: y² = x³ + t (Weierstrass with f=0, g=t)
+    
+    R.<t> = PolynomialRing(QQ)
+    
+    # Check if we can create an elliptic surface
+    if hasattr(lf, 'EllipticSurface'):
+        print("Found EllipticSurface class")
+        # f coefficient (of x), g coefficient (constant term)
+        # y² = x³ + f*x + g
+        S = lf.EllipticSurface(0, t)  # y² = x³ + t
+        print(f"Created surface: {S}")
+        
+    elif hasattr(lf, 'elliptic_surface'):
+        es = lf.elliptic_surface
+        print(f"elliptic_surface module: {dir(es)}")
+        
+    elif hasattr(lf, 'FibreProduct'):
+        print("Found FibreProduct class")
+        
+    elif hasattr(lf, 'Hypersurface'):
+        print("Found Hypersurface class - trying that route")
+        # Maybe we need to define it as a hypersurface
+        
+except Exception as e:
+    print(f"Computation error: {e}")
+    import traceback
+    traceback.print_exc()
+
+print("\n" + "="*70)
+print("EXPLORING PACKAGE EXAMPLES...")
+print("="*70)
+
+# Let's see if there are example files
+import os
+lf_path = os.path.dirname(lf.__file__)
+print(f"Package location: {lf_path}")
+
+# Check for examples
+examples_path = os.path.join(os.path.dirname(lf_path), 'examples')
+if os.path.exists(examples_path):
+    print(f"Examples found: {os.listdir(examples_path)}")
+else:
+    print("No examples directory found")
+    # Try parent directories
+    parent = os.path.dirname(os.path.dirname(lf_path))
+    for item in os.listdir(parent):
+        print(f"  {item}")
+EOF
+sage schoen_lefschetz.sage

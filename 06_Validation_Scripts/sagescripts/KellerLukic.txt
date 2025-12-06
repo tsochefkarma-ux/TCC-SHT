@@ -1,0 +1,59 @@
+cat > wp_from_periods.sage << 'EOF'
+print("W-P METRIC FROM PERIODS (Keller-Lukic method)")
+print("="*50)
+
+from sage.functions.gamma import gamma
+
+omega = CC(gamma(1/3)^3 / (2*pi*sqrt(3)))
+tau = CC(exp(2*pi*I/3))
+
+print(f"Elliptic period: ω = {float(abs(omega)):.6f}")
+print(f"Modular parameter: τ = {tau}")
+print(f"Im(τ) = {float(tau.imag()):.6f}")
+
+norm_omega_sq = float(abs(omega)^4)
+print(f"|ω|^4 = {norm_omega_sq:.6f}")
+
+tau_2 = float(tau.imag())
+g_wp = 1/tau_2**2
+print(f"\nSingle elliptic W-P: g = 1/τ₂² = {g_wp:.4f}")
+
+# But wait - earlier we got g=12 from actual periods!
+# Let's check both
+E = EllipticCurve([0, 1])
+L = E.period_lattice()
+tau_actual = CC(L.basis()[1]/L.basis()[0])
+g_actual = 1/float(tau_actual.imag())**2
+
+print(f"\nFrom actual elliptic curve y²=x³+1:")
+print(f"  τ = {tau_actual}")
+print(f"  Im(τ) = {float(tau_actual.imag()):.6f}")
+print(f"  g = 1/Im(τ)² = {g_actual:.4f}")
+
+print(f"\nNote: τ representations differ by SL(2,Z)!")
+print(f"  Canonical: τ = e^(2πi/3), g = {g_wp:.4f}")
+print(f"  Computed:  τ = {tau_actual}, g = {g_actual:.4f}")
+
+# The intersection form
+kappa = [9, 3, 3]
+print(f"\nIntersection form κ = {kappa}")
+print(f"Ratios: 1 : {float(kappa[0]/kappa[1]):.0f} : {float(kappa[0]/kappa[2]):.0f}")
+
+# Our prediction
+A = float((-25 + sqrt(653))/2)
+lam1 = float(sqrt(A))
+print(f"\nFrom A² + 25A = 7:")
+print(f"  A = {A:.6f}")
+print(f"  λ₁ = {lam1:.6f}")
+
+# KEY TEST: Does g relate to our formula?
+print(f"\n" + "="*50)
+print("TESTING RELATIONSHIPS")
+print("="*50)
+print(f"g_actual / κ₁₂₃ = {g_actual/27:.6f}")
+print(f"g_actual / (κ₁+κ₂+κ₃) = {g_actual/15:.6f}")
+print(f"A × g_actual = {A * g_actual:.4f}")
+print(f"λ₁² × g_actual = {A * g_actual:.4f}")
+print(f"Compare to M = 7: {7/g_actual:.4f}")
+EOF
+sage wp_from_periods.sage

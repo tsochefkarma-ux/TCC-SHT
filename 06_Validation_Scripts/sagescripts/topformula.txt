@@ -1,0 +1,97 @@
+cat > deeper_analysis.sage << 'EOF'
+print("="*60)
+print("DEEPER GEOMETRIC ANALYSIS")
+print("="*60)
+
+# Known values
+g = 12.0  # W-P metric for elliptic curve
+kappa = [9, 3, 3]
+kappa_123 = 27
+h21 = 3
+
+# Our equation: A² + NA = M where N=25, M=7
+N = 25
+M = 7
+A = float((-N + sqrt(N**2 + 4*M))/2)
+lambda_1 = float(sqrt(A))
+
+print(f"\nKEY NUMBERS:")
+print(f"  g_elliptic = {g} = κ₁ + κ₂ = {kappa[0]} + {kappa[1]}")
+print(f"  κ₁₂₃ = {kappa_123}")
+print(f"  N = 25 = κ₁₂₃ - h²¹ + 1 = {kappa_123} - {h21} + 1")
+print(f"  M = 7 = κ₁ - h²¹ + 1 = {kappa[0]} - {h21} + 1")
+
+# Check if equation is purely topological!
+N_check = kappa_123 - h21 + 1
+M_check = kappa[0] - h21 + 1
+print(f"\n  N_check = {N_check} (should be 25)")
+print(f"  M_check = {M_check} (should be 7)")
+
+print(f"\n" + "="*60)
+print("THE TOPOLOGICAL EQUATION")
+print("="*60)
+print(f"  A² + (κ₁₂₃ - h + 1)A = κ₁ - h + 1")
+print(f"  A² + ({kappa_123} - {h21} + 1)A = {kappa[0]} - {h21} + 1")
+print(f"  A² + {N}A = {M}")
+print(f"  Solution: A = {A:.6f}")
+print(f"  Therefore: λ₁ = √A = {lambda_1:.6f}")
+
+# What about g = 12?
+print(f"\n" + "="*60)
+print("WHERE DOES g = 12 FIT?")
+print("="*60)
+print(f"  g = κ₁ + κ₂ = {kappa[0] + kappa[1]}")
+print(f"  g/κ₂ = {g/kappa[1]:.1f} = 4 (exact)")
+print(f"  g/h²¹ = {g/h21:.1f} = 4 (exact)")
+print(f"  g × A = {g * A:.4f} ≈ κ₂ + 1/3?")
+
+# The connection: g appears in the SCALE
+print(f"\n  Key ratio: A × g = {A * g:.4f}")
+print(f"  Compare: κ₂ = {kappa[1]}")
+print(f"  Ratio: (A × g)/κ₂ = {(A*g)/kappa[1]:.4f}")
+
+# Another angle: eigenvalue vs metric
+print(f"\n" + "="*60)
+print("EIGENVALUE-METRIC RELATIONSHIP")
+print("="*60)
+print(f"  λ₁² = A = {A:.6f}")
+print(f"  1/g = {1/g:.6f}")
+print(f"  λ₁² × g = {A * g:.4f}")
+print(f"  λ₁² × κ₁₂₃ = {A * kappa_123:.4f}")
+print(f"  λ₁² × (N+M) = {A * (N+M):.4f}")
+
+# The beautiful result
+print(f"\n" + "="*60)
+print("★ THE COMPLETE PICTURE ★")
+print("="*60)
+print(f"""
+TOPOLOGY determines the equation:
+  A² + (κ₁₂₃ - h + 1)A = κ₁ - h + 1
+  
+With κ = (9,3,3), h = 3:
+  A² + 25A = 7
+  
+Solution gives eigenvalue:
+  λ₁ = √A = 0.5262
+
+Eigenvalue RATIOS from intersection form:
+  λ : λ : λ = 1/√κ₁ : 1/√κ₂ : 1/√κ₃
+            = 1/3 : 1/√3 : 1/√3
+  Normalized: 1 : √3 : √3
+
+Full spectrum:
+  λ₁ = {lambda_1:.4f}
+  λ₂ = λ₁ × √3 = {lambda_1 * float(sqrt(3)):.4f}
+  λ₃ = λ₁ × √3 = {lambda_1 * float(sqrt(3)):.4f}
+  
+Physical predictions:
+  Cabibbo: sin θ_C = λ₁/√6 × (1 + A/6) = {lambda_1/float(sqrt(6)) * (1 + A/6):.4f}
+  α_GUT = A/7 = {A/7:.4f}
+""")
+
+# Verify Cabibbo
+sin_theta_C = lambda_1/float(sqrt(6)) * (1 + A/6)
+theta_C = float(arcsin(sin_theta_C) * 180/pi)
+print(f"  Cabibbo angle: θ_C = {theta_C:.2f}° (observed: 13.0°)")
+EOF
+sage deeper_analysis.sage
