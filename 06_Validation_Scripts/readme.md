@@ -42,6 +42,13 @@ We do not ask you to trust our text files. We ask you to **run the code**.
 * A timestamped log of a successful run of the verification suite.
 * Contains the exact numerical outputs for reference.
 
+
+### (./validation_log.txt](https://github.com/tsochefkarma-ux/TCC-SHT/tree/main/06_Validation_Scripts/sagescripts)
+**The Sage Code For Verification.**
+* A compliation of a bunch of SageMath code I used for verification on Ubuntu.
+* Contains how we found A and test WP, Eigenvalues, etc etc.
+
+
 ---
 
 ## 3. How to Run the Validations
