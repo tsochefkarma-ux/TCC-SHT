@@ -1,0 +1,80 @@
+=====================================================================
+HUNTING THE '-1': DEEPER STRUCTURES
+======================================================================
+Basic data: κ = [9, 3, 3], h¹¹ = 3, h²¹ = 3
+======================================================================
+BETTI NUMBERS OF CALABI-YAU THREEFOLD
+======================================================================
+  b₀ = 1
+  b₁ = 0
+  b₂ = h¹¹ = 3
+  b₃ = 2(1 + h²¹) = 2(1 + 3) = 8  ← THIS IS 8!
+  b₄ = h¹¹ = 3
+  b₅ = 0
+  b₆ = 1
+  Euler characteristic χ = Σ(-1)ⁿbₙ = 0
+======================================================================
+THE KEY INSIGHT: b₃ = 8
+======================================================================
+  κ₁ - 1 = 9 - 1 = 8
+  b₃ = 2(1 + h²¹) = 2(1 + 3) = 8
+  THEY'RE THE SAME!
+  b₃ is the dimension of H³(X), which contains the holomorphic 3-form Ω.
+  This is the HEART of Calabi-Yau geometry!
+======================================================================
+WHAT ABOUT THE DENOMINATOR?
+======================================================================
+  κ₂ + κ₃ - 1 = 3 + 3 - 1 = 5
+  h¹¹ + h²¹ - 1 = 3 + 3 - 1 = 5
+  So: (κ₂ + κ₃ - 1) = (h¹¹ + h²¹ - 1)
+  h¹¹ + h²¹ = total moduli count = 6
+  Subtract 1: perhaps removing the overall scale/volume mode?
+======================================================================
+NEW FORMULA FOR η̄
+======================================================================
+  OLD: η̄ = A × √[(κ₁-1)/(κ₂+κ₃-1)]
+  NEW: η̄ = A × √[b₃ / (h¹¹ + h²¹ - 1)]
+       = A × √[2(1+h²¹) / (h¹¹ + h²¹ - 1)]
+  For self-mirror (h¹¹ = h²¹ = h):
+       = A × √[2(1+h) / (2h - 1)]
+       = A × √[2(1+3) / (2×3 - 1)]
+       = A × √[8/5]  ✓
+======================================================================
+WHY DOES THIS MAKE PHYSICAL SENSE?
+======================================================================
+  CP VIOLATION comes from complex phases in physics.
+  In string theory, these phases live in H³(X) - the cohomology
+  that contains the holomorphic 3-form Ω.
+  dim H³(X) = b₃ = 8
+  The moduli space has dimension h¹¹ + h²¹ = 6.
+  After gauge-fixing one direction: 6 - 1 = 5.
+  So the ratio b₃/(h¹¹+h²¹-1) = 8/5 measures:
+    "Degrees of freedom for CP phases"
+    ─────────────────────────────────
+    "Effective moduli directions"
+  This is a GEOMETRIC origin for CP violation!
+======================================================================
+VERIFY: IS κ₁ = h¹¹ × h²¹?
+======================================================================
+  h¹¹ × h²¹ = 3 × 3 = 9
+  κ₁ = 9
+  Match: True
+  And κ₂ = κ₃ = h¹¹ = h²¹ = 3
+======================================================================
+THE COMPLETE PICTURE
+======================================================================
+  For the Schoen manifold with h¹¹ = h²¹ = 3:
+  κ = (h¹¹ × h²¹, h¹¹, h²¹) = (9, 3, 3)  ✓
+  The intersection numbers ARE the Hodge numbers!
+  And the CP violation formula becomes:
+  η̄ = λ₁² × √[b₃ / (total_moduli - 1)]
+     = λ₁² × √[2(1 + h²¹) / (h¹¹ + h²¹ - 1)]
+  The "-1" is:
+    • In numerator: The "+1" in b₃ = 2(1 + h²¹)
+    • In denominator: Gauge-fixing the overall scale
+  Both have clear geometric meaning!
+  Numerical check:
+  η̄ = A × √[b₃/(h¹¹+h²¹-1)] = 0.2769 × √[8/5]
+     = 0.2769 × 1.2649
+     = 0.3503
+  Observed: 0.348000000000000

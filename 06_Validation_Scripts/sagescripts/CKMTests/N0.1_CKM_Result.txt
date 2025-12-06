@@ -1,0 +1,60 @@
+"======================================================================
+CKM MATRIX FROM SCHOEN MANIFOLD
+======================================================================
+FRAMEWORK VALUES:
+  A = 0.276932
+  λ₁ = 0.526244
+  λ₂ = λ₃ = 0.911481
+PDG WOLFENSTEIN PARAMETERS:
+  λ = 0.225000000000000
+  A = 0.826000000000000
+  ρ̄ = 0.159000000000000
+  η̄ = 0.348000000000000
+CKM MAGNITUDES (PDG):
+  |V_us| = 0.2250
+  |V_cb| = 0.0418
+  |V_ub| = 0.00360
+======================================================================
+TESTING RELATIONSHIPS
+======================================================================
+1. CABIBBO ANGLE (λ):
+   Predicted: sin θ_C = 0.2248
+   Observed:  λ = 0.2250
+   Agreement: 99.89%
+2. V_cb FROM α_GUT:
+   Predicted: V_cb ≈ α_GUT = 0.0396
+   Observed:  V_cb = 0.0418
+   Agreement: 94.6%
+   → A_Wolfenstein = V_cb/λ² = 0.783
+   Observed: A = 0.826
+   Agreement: 94.8%
+3. EIGENVALUE RATIO APPROACH:
+   λ₂/λ₁ = √3 = 1.7321
+   (λ₁/λ₂)² = 1/3 = 0.3333
+   λ₂/κ₁₂₃ = 0.0338 (compare V_cb = 0.0418)
+4. V_ub (1-3 mixing):
+   Predicted: V_ub ≈ α_GUT × λ = 0.00889
+   Observed:  V_ub = 0.00360
+   Ratio: 0.40
+   Alternative: λ₁³/7 = 0.02082
+5. CP VIOLATION (η):
+   Z₃ phase: arg(τ) = 2π/3 = 120°
+   CKM phase: δ = arctan(η/ρ) = 65.4°
+   Ratio δ/120° = 0.545
+   Jarlskog invariant:
+   J_observed ≈ 3×10⁻⁵
+======================================================================
+SUMMARY: CKM FROM λ₁
+======================================================================
+ESTABLISHED:
+  λ (Cabibbo) = λ₁/√6 × (1 + λ₁²/6) = 0.2248 ✓
+PROMISING:
+  A ≈ (α_GUT)/λ² = (λ₁²/7)/λ² = 0.783 (obs: 0.826000000000000)
+  V_cb ≈ α_GUT = λ₁²/7 = 0.0396 (obs: 0.0418)
+NEEDS WORK:
+  ρ, η (CP violation) - may require Z₃×Z₃ phase structure
+PATTERN:
+  V_us ~ λ₁/√_sage_const_6  (1st-2nd generation)
+  V_cb ~ λ₁²/_sage_const_7  (2nd-3rd generation)
+  V_ub ~ λ₁³/? (1st-3rd generation)
+  This suggests: V_ij ~ λ₁^|i-j| / (normalization)"

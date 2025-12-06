@@ -1,0 +1,182 @@
+======================================================================
+WHY √6 IN THE CABIBBO FORMULA?
+======================================================================
+
+The formula: λ = λ₁/√6 × (1 + A/6)
+Both have '6' - is this the same 6?
+
+======================================================================
+HYPOTHESIS 1: 6 = REAL DIMENSIONS OF CY3
+======================================================================
+
+  A Calabi-Yau threefold has:
+  • 3 complex dimensions
+  • 6 real dimensions
+
+  The quark generations might "see" all 6 real dimensions,
+  giving a √6 normalization factor.
+
+  But wait - the CORRECTION factor (1 + A/6) also has 6.
+  If it's the same 6, this suggests a Taylor expansion in 1/6.
+
+
+======================================================================
+HYPOTHESIS 2: 6 = TOTAL MODULI COUNT
+======================================================================
+
+  h¹¹ + h²¹ = 3 + 3 = 6
+
+  The moduli space has 6 dimensions total.
+  Inter-generational mixing involves ALL moduli,
+  hence normalization by √(total_moduli) = √6.
+
+  This connects to our η̄ formula:
+  • η̄ uses (h¹¹ + h²¹ - 1) = 5 (gauge-fixed)
+  • λ uses (h¹¹ + h²¹) = 6 (un-gauge-fixed)
+
+  Maybe: Cabibbo mixing is "before" gauge-fixing,
+         CP violation is "after" gauge-fixing?
+
+
+======================================================================
+HYPOTHESIS 3: GENERATION STRUCTURE
+======================================================================
+
+  3 generations × 2 (quarks vs antiquarks or up vs down) = 6
+
+  Or: 3 up-type + 3 down-type = 6 quark flavors
+
+  The CKM matrix mixes these 6 states, giving √6 normalization?
+
+
+======================================================================
+TESTING: WHAT IF WE DECOMPOSE THE FORMULA?
+======================================================================
+  Full formula: λ₁/√6 × (1 + A/6) = 0.2248
+  Observed: 0.225000000000000
+
+  λ₁/√(h¹¹+h²¹) = 0.2148
+
+  Correction factor (1 + A/6) = 1.0462
+  This is (1 + λ₁²/6) = (6 + λ₁²)/6
+
+======================================================================
+HYPOTHESIS 4: NORMALIZATION FROM METRIC
+======================================================================
+
+  The moduli space metric has 6 independent directions.
+
+  The W-P eigenvalues are: λ₁² = 0.2769, λ₂² = λ₃² = 0.8308
+
+  Sum of eigenvalues: λ₁² + λ₂² + λ₃² = 1.9385 = 7A
+
+  Trace of metric / dimensions = 7A/6 ≈ 0.3231
+
+  Hmm, 7A/6 ≈ A × 1.167, close to correction factor 1.046?
+
+
+======================================================================
+HYPOTHESIS 5: SPECIAL GEOMETRY
+======================================================================
+
+  In special geometry, the Kähler potential is:
+
+  K = -log(i ∫ Ω ∧ Ω̄)
+
+  The metric is G_ij̄ = ∂_i ∂_j̄ K
+
+  At a symmetric point, the metric might have determinant ~ 1/6^n
+  or trace ~ 6.
+
+  Let's check: does √6 appear in the period normalization?
+
+
+======================================================================
+HYPOTHESIS 6: COMPARE TO OTHER FORMULAS
+======================================================================
+
+  Pattern:
+  • λ (1-2 mixing): uses h¹¹ + h²¹ = 6
+  • A (2-3 mixing amplitude): uses h²¹ = 3
+  • ρ̄ (1-3 real part): uses √h²¹ = √3
+  • η̄ (1-3 imaginary/CP): uses b₃/(h¹¹+h²¹-1) = 8/5
+
+  The 6 in Cabibbo connects BOTH Hodge numbers together,
+  while the other parameters use them separately.
+
+  This makes sense: Cabibbo (1-2 mixing) is the "largest" mixing,
+  involving the full moduli space structure!
+
+
+======================================================================
+HYPOTHESIS 7: FIBER STRUCTURE
+======================================================================
+
+  The Schoen manifold is a fiber product: E × E → P¹
+
+  Each elliptic curve E has 2 real dimensions (1 complex).
+  The base P¹ has 2 real dimensions.
+
+  Total: 2 + 2 + 2 = 6 real dimensions ✓
+
+  But more specifically:
+  • Fiber: 2 dimensions × 2 curves = 4
+  • Base: 2 dimensions
+  • Fibration structure: 4 + 2 = 6
+
+  The √6 might represent the "total fibration degrees of freedom"!
+
+
+======================================================================
+MOST LIKELY: h¹¹ + h²¹ = TOTAL MODULI SPACE
+======================================================================
+
+  CONCLUSION: √6 = √(h¹¹ + h²¹) = √(total moduli dimensions)
+
+  The Cabibbo angle involves mixing across ALL moduli directions,
+  hence the normalization by √(total_moduli).
+
+  Compare to η̄ which uses (h¹¹ + h²¹ - 1) = gauge-fixed moduli.
+
+  Physical interpretation:
+  • 1-2 generation mixing (Cabibbo): sees full 6D moduli space
+  • CP violation: sees 5D space after fixing one direction
+
+  The "-1" in η̄ vs no "-1" in λ:
+  • Cabibbo is a REAL rotation angle → full moduli
+  • CP phase is a COMPLEX phase → needs one direction fixed for reference
+
+  This is consistent with gauge-fixing interpretation!
+
+
+======================================================================
+NUMERICAL VERIFICATION
+======================================================================
+  λ = λ₁/√6 × (1 + A/6) = 0.22475  (original)
+  λ = λ₁/√6 × (1 + A/3) = 0.23467  (correction with h²¹)
+  λ = λ₁/√6 × 1 = 0.21484  (no correction)
+  Observed: 0.22500
+
+  The correction (1 + A/6) ≈ (1 + A/(h¹¹+h²¹)) improves the fit!
+  So BOTH the √6 and the /6 come from h¹¹ + h²¹ = 6.
+
+======================================================================
+FINAL FORMULA
+======================================================================
+
+  λ = λ₁/√(h¹¹+h²¹) × (1 + λ₁²/(h¹¹+h²¹))
+
+    = λ₁/√(h¹¹+h²¹) × (h¹¹+h²¹+λ₁²)/(h¹¹+h²¹)
+
+    = λ₁ × (h¹¹+h²¹+A) / (h¹¹+h²¹)^(3/2)
+
+  For h¹¹ = h²¹ = 3:
+
+    = λ₁ × (6 + A) / 6^(3/2)
+
+    = 0.5262 × (6.2769) / 14.6969
+
+    = 0.2248
+
+  Observed: 0.225000000000000
+  Agreement: 99.89%
