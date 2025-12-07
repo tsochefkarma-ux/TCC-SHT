@@ -115,9 +115,9 @@ These are **different algebraic numbers**. They cannot be equal. The ~0.5% agree
 
 ### Constructed (Post-Hoc Fitting)
 
-⚠ A = 7 × Ω_k (relation constructed to fit data)
-⚠ Ω_k = 1/(25 + A) (relation constructed to fit data)
-⚠ A² + 25A = 7 (approximation, not exact identity)
+ A = 7 × Ω_k (relation constructed to fit data)
+ Ω_k = 1/(25 + A) (relation constructed to fit data)
+ A² + 25A = 7 (approximation, not exact identity)
 
 ### The Honest Conclusion
 
