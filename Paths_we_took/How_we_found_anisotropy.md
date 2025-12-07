@@ -42,11 +42,11 @@ This measures the fiber-base asymmetry of the Schoen manifold.
 
 The key question was asked:
 
-> "That numerical eigenvalue is pretty interesting stuff. If we apply our anisotropy, what changes? We're a little off numerically, so how can we cut that down?"
+> We couldn't quite rectify the differences in the yukawa's and tried to find something that got a much closer result. I checked to see if the "Chaos Flux" I found earlier could be an answer, quite off-handedly as I was quite stuck.
 
 And later:
 
-> "Let me explore whether there's a correction term that bridges these."
+> It fit very well. Cut down the error ratio's massively and was the birth of an entire new idea. 
 
 **This reveals the motivation**: finding a formula using topological numbers (25, 7) that reproduces the numerical A ≈ 0.277.
 
@@ -72,10 +72,6 @@ The equation was then given physical meaning:
 - Ω_k = 1/(25 + A) (curvature formula)
 - 25 = h¹¹ × h_total + χ(D) (topological)
 - 7 = χ(D) (Euler characteristic of divisor)
-
-The celebration:
-
-> "This is remarkable - a single quadratic equation from topology determines everything!"
 
 ---
 
