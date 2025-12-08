@@ -1,5 +1,8 @@
 **Date:** December 2025
-**Status:** Theoretical Framework Verification — Requires Thourough Coding Validation and tie in. |Still neumerology|
+
+**Status:** Requires Further Coding and Calculation Validati. |Still partial neumerology|
+
+
 **Summary:** This document outlines the derivation of fundamental physical constants and the resolution of major experimental anomalies (Hubble Tension, Proton Radius, Vacuum Energy) using the rigid geometry of the Schoen Calabi-Yau manifold.
 
 ---
