@@ -1,11 +1,5 @@
 # An Exact Algebraic Constant from Weil-Petersson Geometry of the Schoen Manifold
 
-**Authors:** [To be added]  
-**Date:** December 2025  
-**Status:** Mathematical note
-
----
-
 ## Abstract
 
 We compute the Weil-Petersson metric eigenvalues for the Schoen Calabi-Yau threefold at the Z₃-symmetric point in moduli space. Using the intersection numbers from Hosono-Saito-Stienstra (1997) and the Keller-Lukic normalization (2009), we find that the fiber eigenvalue squared has an exact algebraic form:
@@ -242,5 +236,3 @@ Check:
 
 ---
 
-*Submitted to arXiv: [date]*  
-*Categories: math.AG, math.DG*
