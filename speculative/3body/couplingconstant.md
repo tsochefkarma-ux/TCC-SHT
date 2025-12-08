@@ -59,13 +59,13 @@ Note: 21889 = 7 × 3127, so χ(D) factors out of the numerator.
 
 ## Part III: The Cabibbo Angle
 
-### 3.1 Tree-Level Formula
+### 3.1 Tree-Level Formula (Derived)
 
 $$\sin\theta_C^{(0)} = \frac{\lambda_1}{\sqrt{h_{total}}} = \frac{\lambda_1}{\sqrt{6}} = 0.2154$$
 
 This gives 3.9% error vs experiment (0.22405).
 
-### 3.2 Corrected Formula
+### 3.2 Corrected Formula (Empirical)
 
 $$\sin\theta_C = \frac{\lambda_1}{\sqrt{h_{total}}} \times (1 + \alpha_{GUT})$$
 
@@ -74,11 +74,18 @@ $$\sin\theta_C = 0.21539 \times (1 + 0.03977) = 0.21539 \times 1.03977 = 0.22396
 
 **Precision: 0.04% error!**
 
-### 3.3 Physical Interpretation
+⚠️ **Status: Empirically discovered, not derived.** The (1 + α_GUT) correction was found by testing formulas, not from first principles. The structure is physically sensible (perturbative corrections typically appear as multiplicative (1 + α) factors), but we have not derived WHY the coefficient is exactly α_GUT.
 
-The correction factor (1 + α_GUT) represents:
+The integer approximation (1 + 1/N) = 26/25 gives even better precision (0.02%).
+
+### 3.3 Physical Interpretation (Conjectured)
+
+The correction factor (1 + α_GUT) may represent:
 - GUT-scale threshold corrections to flavor mixing
-- The anisotropy per topological defect
+- RG running from M_GUT to M_weak
+- Yukawa matrix structure we haven't derived
+
+A proper derivation would require knowing the Yukawa texture from Schoen geometry.
 
 ### 3.4 Alternative Form
 
@@ -105,12 +112,13 @@ The deviation from 7/25 is 0.6% and involves the same irrational √33.
 
 ## Part V: Summary Table
 
-| Quantity | Exact Formula | Numerical Value | Integer Approx |
-|----------|---------------|-----------------|----------------|
-| λ₁² | (1449 − 153√33)/2048 | 0.27836 | 7/25 = 0.28 |
-| α_GUT | λ₁²/χ(D) | 0.03977 | 1/25 = 0.04 |
-| sin θ_C | (λ₁/√6)(1 + α_GUT) | 0.22396 | — |
-| N | (a + c)/2 | 25 | exact |
+| Quantity | Exact Formula | Numerical Value | Status |
+|----------|---------------|-----------------|--------|
+| λ₁² | (1449 − 153√33)/2048 | 0.27836 | **Derived** |
+| α_GUT | λ₁²/χ(D) | 0.03977 | **Derived** |
+| sin θ_C (tree) | λ₁/√6 | 0.21539 | **Derived** |
+| sin θ_C (full) | (λ₁/√6)(1 + α_GUT) | 0.22396 | **Empirical** |
+| N | (a + c)/2 | 25 | **Derived** |
 
 ---
 
@@ -156,17 +164,17 @@ This may require the loop correction ansatz (1/7156) or a different mechanism.
 
 ## Conclusion
 
-From the Schoen manifold geometry, we derive:
+From the Schoen manifold geometry, we **derive**:
 
 $$\boxed{\alpha_{GUT} = \frac{\lambda_1^2}{\chi(D)} = \frac{1449 - 153\sqrt{33}}{14336} \approx \frac{1}{25}}$$
 
+And we **observe empirically** that:
+
 $$\boxed{\sin\theta_C = \frac{\lambda_1}{\sqrt{h_{total}}} \times (1 + \alpha_{GUT}) = 0.22396}$$
 
-The GUT coupling emerges as anisotropy divided by topology. The Cabibbo angle receives a correction of exactly (1 + α_GUT).
-
-Both results use only HSS (1997) inputs. No free parameters.
+The GUT coupling emerges as anisotropy divided by topology (derived). The Cabibbo angle correction factor (1 + α_GUT) works to 0.04% precision but was found by testing, not derived from first principles.
 
 ---
 
 *Document created: December 2025*  
-*Key finding: Cabibbo correction factor = (1 + α_GUT) gives 0.04% precision*
+*Key finding: α_GUT = λ₁²/χ (derived); Cabibbo correction (1 + α_GUT) (empirical)*
