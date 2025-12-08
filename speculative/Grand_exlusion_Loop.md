@@ -123,7 +123,7 @@ Here is the comprehensive reference document explaining every number, integer, a
 ## 1. The Primary Inputs (Immutable Geometry)
 These are the fundamental topological invariants of the manifold. They are not derived; they are the "DNA" of the space, fixed by the definition of the Schoen Manifold ($\mathbb{Z}_3 \times \mathbb{Z}_3$ quotient).
 
-| Symbol | Value | Name | Physical Meaning | Source |
+| Symbol | Value | Name | Physical Meaning |
 | :--- | :--- | :--- | :--- | :--- |
 | **$h^{1,1}$** | **3** | **Kähler Moduli** | Number of independent cycles controlling the size of dimensions. | |
 | **$h^{2,1}$** | **3** | **Complex Structure Moduli** | Number of cycles controlling the *shape* of dimensions. | |
@@ -137,7 +137,7 @@ These are the fundamental topological invariants of the manifold. They are not d
 ## 2. The Secondary Inputs (Metric Structure)
 These integers are derived from the Weil-Petersson metric equations ($32x^2 - 51x + 18 = 0$), which govern how the manifold curves.
 
-| Symbol | Value | Derivation | Physical Meaning | Source |
+| Symbol | Value | Derivation | Physical Meaning |
 | :--- | :--- | :--- | :--- | :--- |
 | **$a$** | **32** | $4(\kappa_{123}-1)$ | **Curvature Coefficient.** The "resolution" or grid-size of the moduli space. | |
 | **$b$** | **51** | $6\kappa_{123} - \kappa_{223}$ | **Linear Coefficient.** Intermediate term in the characteristic polynomial. | |
