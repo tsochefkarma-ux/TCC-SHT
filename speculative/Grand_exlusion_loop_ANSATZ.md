@@ -1,11 +1,11 @@
 # The Geometric Exclusion Mechanism
 **Derivation of the Universal Loop Constant from Schoen Manifold Topology**
 
-#**Date:** December 2025
+**Date:** December 2025
 
-#**Status:** Still Possibly Highly Heuristic and Neumerological, despite having internal consistency with the rest of the model. It's at best hand-wavy heurism and at worst, beautiful numerology. 
+**Status:** Still Possibly Highly Heuristic and Neumerological, despite having internal consistency with the rest of the model. It's at best hand-wavy heurism and at worst, beautiful numerology. 
 
-#**Theory:** Flux Compactification on Schoen Manifold ($\mathbb{Z}_3 \times \mathbb{Z}_3$ Quotient)
+**Theory:** Flux Compactification on Schoen Manifold ($\mathbb{Z}_3 \times \mathbb{Z}_3$ Quotient)
 
 ---
 
