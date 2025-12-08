@@ -116,8 +116,8 @@ Here is the comprehensive reference document explaining every number, integer, a
 
 
 ---
-
-#### Part 2 - The Numbers
+***
+#### Section 2 - The Numbers
 ---
 
 ## 1. The Primary Inputs (Immutable Geometry)
