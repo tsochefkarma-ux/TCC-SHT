@@ -10,7 +10,7 @@
 
 This directory contains theoretical extensions of the Computational Cosmos framework that are currently under investigation or have been rigorously tested and falsified.
 
-Unlike the core framework (which rests on the "Gold Standard" derivations in `01_Core_Framework`), the ideas here are hypotheses. We include them to demonstrate:
+Unlike the core framework (which rests on a higher Standard of derivations in `01_Core_Framework`), the ideas here are hypotheses. We include them to demonstrate:
 1.  **Transparency:** We document our failed guesses as well as our successes.
 2.  **Rigor:** We use the framework's geometry to mathematically test new ideas.
 3.  **Serendipity:** How falsifying one idea often leads to confirming another.
