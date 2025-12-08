@@ -1,7 +1,7 @@
 # First-Principles Derivation of the Stability Buffer
 
 **Date:** December 2025  
-**Status:** Derived from geometry (2 ppm precision)  
+**Status:** Derived from geometry (2 ppm precision)  | Still requires a fitted number to allow it to work. 
 **Key Result:** The stability gap 1/Gap = 803.3 emerges from pure topology
 
 ---
